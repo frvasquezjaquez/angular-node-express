@@ -1,8 +1,6 @@
 pipeline {
     agent any
-    environment {
-       DEMO = True
-    }
+    
     stages {
         stage('Prepare') {
             steps {
@@ -30,9 +28,5 @@ pipeline {
             }
         }
     }
-    post {
-        success {
-            sh "Success"
-        }
-    }
+   
 }
