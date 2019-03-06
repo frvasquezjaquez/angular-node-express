@@ -27,6 +27,13 @@ export class InputUserDataFormComponent implements OnInit {
 
   invalidFirstName()
   {
+	let a = 0; 
+	a =1;
+	a =1;
+	a =1;
+	a =1;
+	a =1;
+	
   	return (this.submitted && (this.serviceErrors.first_name != null || this.userForm.controls.first_name.errors != null));
   }
 
